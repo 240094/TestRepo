@@ -3,8 +3,16 @@
 import java.util.Scanner;
 
 
-package TestRepo;
 public class MyProgam {
+
+
+    int sumDouble(int a, int b) {
+        int c = a + b
+        if (a == b) {
+            return c * 2
+        }
+        return c;
+    }
 
     public static void main(String args[]) {
         System.out.print("input your name");
