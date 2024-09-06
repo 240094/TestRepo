@@ -2,53 +2,40 @@
 import java.util.Scanner;
 
 public class MyProgam {
+    static Scanner scanner = new Scanner(System.in);
+
+    static void challenge1() {
+        int days = scanner.nextInt();
+        System.out.print(days * 86400);
+
+        
+    }
 
 
-    public static void addNumbers(Scanner input) {
+    static void challenge2() {
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+        System.out.print(num1 + num2);
 
-        System.out.print("enter your number 1: ");
-        int num1 = input.nextInt();
+        scanner.close();
+    }
 
-        System.out.print("enter your number 2: ");
-        int num2 = input.nextInt();
-
+    static void challenge3() {
+        int num1 = scanner.nextInt();
+        Scanner BLAH = new Scanner(System.in);
+        int num2 = BLAH.nextInt();
         System.out.println(num1 + num2);
-    }
-
-
-    public static void subtractNumbers(Scanner input) {
-        System.out.print("enter your number 1: ");
-        int num1 = input.nextInt();
-
-        System.out.print("enter your number 2: ");
-        int num2 = input.nextInt();
-
         System.out.println(num1 - num2);
+        System.out.println(num1 * num2);
+        System.out.println(num1/num2);
     }
+
 
     public static void main(String args[]) {
-
-        while (true) {
-            
-            System.out.print("enter your input: ");
-            Scanner input = new Scanner(System.in);
-            String string = input.nextLine();
-
-            if (string.equals("add")) {
-                addNumbers(input);
-                continue;
-            } 
-
-            else if (string.equals("subtract")) {
-                subtractNumbers(input);
-                continue;
-            }
-
-            else if (string.equals("exit")) {
-                break;
-            }
-
-            System.out.println(string);
-        }
+        challenge1();
+        challenge2();        
+        challenge3();
     }
+
+    
 }
